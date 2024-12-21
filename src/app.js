@@ -1,11 +1,11 @@
 function bmi(){
   let height = document.getElementById('height');
   let weight = document.getElementById('weight');
-  let result = document.getElementById('result');
+  let bmiResult = document.getElementById('bmiResult');
   // let btn = document.getElementById('btn');
   let range = document.getElementById('range');
   let total = (weight.value / (height.value * height.value)).toFixed(2);
-  result.innerText = total;
+  bmiResult.innerText = total;
   let rangeValue = '';
   if( total < 18.5 ){
     rangeValue = 'Underweight';
